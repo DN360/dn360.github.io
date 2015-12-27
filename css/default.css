@@ -10,10 +10,58 @@ html {
     html{ font-size : 100%; }
 }
 
+@font-face {
+    font-family: 'chogokubosogothic_5';
+    src: url(../font/chogokubosogothic_5.ttf) format('truetype');
+}
+
+body {
+    margin: 0px;
+}
+
 .titlebox {
     font-family: 'Bubbler One', sans-serif;
     font-size: 3rem;
     text-align: center;
-    margin: auto;
-    letter-spacing: 8px;
+    margin: auto 0 auto 0;
+    letter-spacing: 16px;
+}
+
+.header {
+    top: 0px;
+    background-color: rgb(50, 50, 50);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.mainbox {
+    border: 1px solid #000;
+    position: relative;
+    top: 50px;
+    font-family: 'chogokubosogothic_5';
+    font-size: 1.5rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(50, 50, 50);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+
+a:link {/*未訪問のリンク*/
+    color: #ff5555;
+    font-style: normal;
+    text-decoration: none;
+}
+a:visited {/*訪問後のリンク*/
+    color: #ff5555;
+    text-decoration: none;
 }
