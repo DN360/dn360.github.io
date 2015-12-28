@@ -11,13 +11,12 @@ html {
 }
 
 @font-face {
-    font-family: 'chogokubosogothic_5';
-    src: url(../font/chogokubosogothic_5.ttf) format('truetype');
+    font-family: '07LogoTypeGothic7';
+    src: url(../font/07LogoTypeGothic7.ttf) format('truetype');
 }
 
 body {
     margin: 0px;
-    height: 2000px;
     -webkit-animation: backchange;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 60s;
@@ -40,35 +39,44 @@ body {
     font-size: 3rem;
     text-align: center;
     margin: auto 0px auto 0px;
-    letter-spacing: 16px;
 }
 
 .header {
     position: fixed;
     font-family: 'Bubbler One', sans-serif;
     top: 0px;
-    background-color: rgb(50, 50, 50);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     height: auto;
     text-align: center;
-    color: #fff;
+    color: #222;
     z-index: 2;
 }
 
 .mainbox {
-    border: 1px solid #000;
-    position: absolute;
-    width: 70%;
-    top: 20%;
-    left: 20%;
-    font-family: 'chogokubosogothic_5';
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    min-height: 400px;
+    top: 60px;
+    margin: 0 auto 20px auto;
+    padding-bottom: 20px;
+    font-family: '07LogoTypeGothic7', sans-serif;
     font-size: 1.5rem;
-    background-color: white;
+    background-color: #eee;
+    line-height: 50px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mainbox .link {
+    font-family: '07LogoTypeGothic7', sans-serif;;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .sidebar {
-    font-family: 'chogokubosogothic_5';
+    font-family: '07LogoTypeGothic7', sans-serif;;
     position: absolute;
     top: 20%;
     left: 2%;
@@ -107,6 +115,16 @@ body {
     cursor: pointer;
 }
 
+.menubox .intp { 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: middle center;
+    -webkit-animation-name: focusanim;
+    -webkit-transition: 0.5s;
+    cursor: default;
+}
+
 .menubox span:hover {
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: linear;
@@ -128,12 +146,33 @@ body {
     }
 }
 
-a:link {/*未訪問のリンク*/
+.mainbox .canvasc {
+    margin-left: auto;
+    width: 100%;
+}
+
+a:link {
     color: #ff5555;
     font-style: normal;
     text-decoration: none;
 }
-a:visited {/*訪問後のリンク*/
+a:visited {
     color: #ff5555;
     text-decoration: none;
+}
+
+table {
+    border: 2px #000000 dotted;
+}
+
+caption {
+    border: 2px #000000 dotted;
+}
+
+td {
+    border: 1px #000000 solid;
+}
+
+.headtd {
+    background-color: rgba(0, 0, 0, 0.1);
 }
