@@ -1,5 +1,5 @@
 html {
-    font-size : 75%; 
+    font-size : 75%;
 }
  
 @media screen and (min-width : 768px){
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    margin: 0px;
+    margin: 0px; 
     -webkit-animation: backchange;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 60s;
