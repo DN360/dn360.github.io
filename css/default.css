@@ -169,6 +169,14 @@ caption {
     border: 2px #000000 dotted;
 }
 
+tr.comp {
+    background-color: rgba(255, 255, 255, 255);
+}
+
+tr.progressing{
+    background-color: rgba(200, 200, 255, 120);
+}
+
 td {
     border: 1px #000000 solid;
 }
