@@ -1,0 +1,12 @@
+@import "styles/theme.scss";
+.root {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+// write another class

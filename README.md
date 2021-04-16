@@ -1,6 +1,7 @@
 # dn360.github.io
-githubでホームページ作れるってきいて試験的に作ってます。
+
+github でホームページ作れるってきいて試験的に作ってます。
 
 いろんなことができるね。
 
-http://dn360.github.io
+https://dn360.github.io
