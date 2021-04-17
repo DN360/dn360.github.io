@@ -2,9 +2,7 @@ import React from 'react';
 import classes from 'styles//about.module.scss';
 import {NextPage} from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
+import {BackButton} from 'components/Buttons';
 
 const AboutPage: NextPage<{}> = () => {
   return (
@@ -12,14 +10,7 @@ const AboutPage: NextPage<{}> = () => {
       <Head>
         <title>Monbrand software | About</title>
       </Head>
-      <Link href="/">
-        <a>
-          <div className={classes.iconButton}>
-            <FontAwesomeIcon icon={faArrowLeft} />
-            go back to top page
-          </div>
-        </a>
-      </Link>
+      <BackButton />
       <div className={classes.center}>
         <h1 className={classes.h5}>Monbrand Softwareとは？</h1>
       </div>

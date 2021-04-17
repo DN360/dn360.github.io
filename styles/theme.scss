@@ -200,22 +200,3 @@ a.link {
 .clickable {
   cursor: pointer;
 }
-
-.button {
-  border: 1px solid #aaa;
-  padding: 5px 0px;
-  font-size: 16px;
-  background-color: rgba($color: white, $alpha: 0.5);
-}
-
-.iconButton {
-  @extend .button;
-  display: flex;
-  align-items: center;
-  width: max-content;
-  padding: 5px 10px;
-  svg {
-    height: 16px;
-    padding-right: 1em;
-  }
-}

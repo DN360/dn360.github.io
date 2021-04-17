@@ -5,6 +5,7 @@ import {NextPage} from 'next';
 import Link from 'next/link';
 import {Box, BoxContainer} from 'components/Box';
 import {TabLink} from 'components/TabLink';
+import {Button} from 'components/Buttons';
 
 
 const IndexPage: NextPage<{}> = () => {
@@ -18,24 +19,24 @@ const IndexPage: NextPage<{}> = () => {
       </div>
       <BoxContainer size="3" className={classes.boxContainer}>
         <Box size="2" mode="fluid">
-          <div className={classes.button}><TabLink href="https://twitter.com/DN360">Twitter</TabLink></div>
+          <Button><TabLink href="https://twitter.com/DN360">Twitter</TabLink></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <div className={classes.button}><TabLink href="https://github.com/DN360">Github</TabLink></div>
+          <Button><TabLink href="https://github.com/DN360">Github</TabLink></Button>
         </Box>
       </BoxContainer>
       <BoxContainer size="2" className={classes.boxContainer}>
         <Box size="1" mode="fluid">
-          <div className={classes.button}><Link href="/about"><a>About</a></Link></div>
+          <Button><Link href="/about"><a>About</a></Link></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <div className={classes.button}><Link href="/works"><a>Works</a></Link></div>
+          <Button><Link href="/works"><a>Works</a></Link></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <div className={classes.button}><Link href="/links"><a>Links</a></Link></div>
+          <Button><Link href="/links"><a>Links</a></Link></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <div className={classes.button}><Link href="/history"><a>History</a></Link></div>
+          <Button><Link href="/history"><a>History</a></Link></Button>
         </Box>
       </BoxContainer>
     </div>
