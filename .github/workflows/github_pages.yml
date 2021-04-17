@@ -20,6 +20,7 @@ jobs:
         run: |
           yarn build:all
           touch out/.nojekyll
+          echo "www.mbsoftware.tokyo" > out/CNAME
         env:
           GITHUB_PAGES: true
       - name: deploy
