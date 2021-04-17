@@ -9,6 +9,8 @@ const AboutPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | About</title>
+        <meta name="description" content="Monbrand Softwareとは？"/>
+        <meta property="og:description" content="Monbrand Softwareとは？"/>
       </Head>
       <BackButton />
       <div className={classes.center}>

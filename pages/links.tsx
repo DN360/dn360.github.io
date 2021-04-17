@@ -8,7 +8,7 @@ import {TabLink} from 'components/TabLink';
 const links: [
   string, string, string | Element | React.ReactFragment
 ][] = [
-  ['アイマスPカード', 'https://wiki.mbsoftware.tokyo/card.html', 'おひげPのアイマスPカードです、よろしくおねがいします。'],
+  ['アイマスPカード', 'https://wiki.mbsoftware.tokyo/card/', 'おひげPのアイマスPカードです、よろしくおねがいします。'],
   ['あずきノート', 'https://uxhpu.net/', (
     <span key="link-to-azuki">
       <TabLink className={classes.link} href="https://twitter.com/uxhpu">あずきちゃん</TabLink>のホームページです。
@@ -31,6 +31,8 @@ const LinksPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | Links</title>
+        <meta name="description" content="リンク集"/>
+        <meta property="og:description" content="リンク集"/>
       </Head>
       <BackButton />
       <div className={classes.center}>

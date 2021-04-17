@@ -13,6 +13,8 @@ const IndexPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | TOP</title>
+        <meta name="description" content="MonBrand Softwareの公式サイトです"/>
+        <meta property="og:description" content="MonBrand Softwareの公式サイトです"/>
       </Head>
       <div className={classes.center}>
         <h1 className={classes.h5}>Welcome to Monbrand Software!</h1>

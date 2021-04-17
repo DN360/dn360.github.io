@@ -21,6 +21,8 @@ const HistoryPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | History</title>
+        <meta name="description" content="Monbrand Softwareの歴史"/>
+        <meta property="og:description" content="Monbrand Softwareの歴史"/>
       </Head>
       <BackButton />
       <div className={classes.center}>

@@ -27,12 +27,10 @@ class CustomApp extends App {
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta name="baseurl" content="https://www.mbsoftware.tokyo"/>
           <meta charSet="utf-8"/>
-          <meta name="description" content="MonBrand Softwareの公式サイトです"/>
-          <meta property="og:url" content="https://dn360.github.io"/>
+          <meta property="og:url" content="https://www.mbsoftware.tokyo"/>
           <meta property="og:title" content="Monbrand Software | TOP"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:description" content="MonBrand Softwareの公式サイトです"/>
-          <meta property="og:image" content="https://dn360.github.io/site_icon_256.png"/>
+          <meta property="og:image" content="https://www.mbsoftware.tokyo/site_icon_256.png"/>
           <meta name="twitter:card" content="summary"/>
           <meta name="twitter:site" content="@DN360"/>
           <meta property="og:site_name" content="Monbrand Software"/>

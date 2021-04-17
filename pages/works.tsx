@@ -9,10 +9,15 @@ const WorksPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | Works</title>
+        <meta name="description" content="Monbrand Software 作品集"/>
+        <meta property="og:description" content="Monbrand Software 作品集"/>
       </Head>
       <BackButton />
+      <div className={classes.center}>
+        <h1 className={classes.h5}>作品ページ</h1>
+      </div>
       <p>
-        まだ書いている途中です。ちょっとまっててね。
+        DN360が個人で制作したページの数々です。
       </p>
     </div>
   );
