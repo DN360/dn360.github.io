@@ -1,7 +1,5 @@
 # dn360.github.io
 
-github でホームページ作れるってきいて試験的に作ってます。
+自鯖からこっちに移行したよーーーーーーーーーーーーーーーーーーーーーん
 
-いろんなことができるね。
-
-https://dn360.github.io
+https://www.mbsoftware.tokyo
