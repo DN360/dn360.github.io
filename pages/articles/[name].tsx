@@ -11,6 +11,9 @@ const ArticlePage: NextPage<{article: Article}> = ({article}) => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand Software | {article.title}</title>
+        <meta name="description" content={article.title}/>
+        <meta property="og:description" content={article.title}/>
+        <meta property="og:type" content="article" />
       </Head>
       <BackButton to="/articles">
         go back to article list page

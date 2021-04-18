@@ -26,6 +26,8 @@ const ArticlesPage: NextPage<{articles?: MiniArticle[]}> = ({articles} = {articl
     <div className={classes.root}>
       <Head>
         <title>Monbrand Software | Articles</title>
+        <meta name="description" content="ブログ記事一覧"/>
+        <meta property="og:description" content="ブログ記事一覧"/>
       </Head>
       <BackButton />
       <div className={classes.center}>
