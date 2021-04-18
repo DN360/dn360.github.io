@@ -1,0 +1,1 @@
+{"pageProps":{"article":{"date":"2021年04月18日","title":"リニューアル","main":"ブログを新調してみた。\n\nNextJS の SSG の機能を使って、毎回 Markdown 形式をブログ記事としてビルドしてやれば実装できることがわかった。\n\nこれで wordpress とおさらばだぜー！\n","id":"2021-04-18_リニューアル","dotDate":"2021.04.18"}},"__N_SSG":true}
