@@ -20,11 +20,14 @@ const IndexPage: NextPage<{}> = () => {
         <h1 className={classes.h5}>Welcome to Monbrand Software!</h1>
       </div>
       <BoxContainer size="3" className={classes.boxContainer}>
-        <Box size="2" mode="fluid">
+        <Box size="1" mode="fluid">
           <Button className={classes.linkButton}><TabLink href="https://twitter.com/DN360">Twitter</TabLink></Button>
         </Box>
         <Box size="1" mode="fluid">
           <Button className={classes.linkButton}><TabLink href="https://github.com/DN360">Github</TabLink></Button>
+        </Box>
+        <Box size="1" mode="fluid">
+          <Button className={classes.linkButton}><Link href="/articles"><a>Articles</a></Link></Button>
         </Box>
       </BoxContainer>
       <BoxContainer size="2" className={classes.boxContainer}>

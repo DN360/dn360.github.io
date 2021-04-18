@@ -7,21 +7,11 @@
   min-height: 300px;
   max-height: 90vh;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   border-radius: 10px;
 
-  .wrapper {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    width: calc(100% + 17px);
-
-    @include mobile() {
-      width: 100%;
-    }
-
-    .page {
-      margin: 10px;
-    }
+  .page {
+    margin: 10px;
   }
 }
 

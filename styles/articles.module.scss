@@ -3,10 +3,8 @@
   display: block;
 }
 
-.articleImg {
-  display: block;
-  margin: auto;
-  max-width: 100%;
+.pagerContainer {
+  display: flex;
+  justify-content: center;
 }
-
 // write another class
