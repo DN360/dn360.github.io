@@ -13,7 +13,7 @@ export type BackgroundItem = {
 
 const outerProps = {
   initialized: false,
-  duration: 1000,
+  duration: 500,
   maxLayer: 10,
 };
 

@@ -3,7 +3,7 @@ import {useMediaQuery} from 'react-responsive';
 
 export const Hidden: React.FC<{on: 'pc' | 'mobile'}> = ({on, children}) => {
   const mq = useMediaQuery({
-    query: 'screen and (min-width: 721px)',
+    query: 'screen and (min-width: 769px)',
   });
   if (mq && on === 'pc') {
     return (<></>);

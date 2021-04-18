@@ -4,6 +4,7 @@ import {NextPage} from 'next';
 import Head from 'next/head';
 import {BackButton} from 'components/Buttons';
 import {TabLink} from 'components/TabLink';
+import {Table} from 'components/Table';
 
 const links: [
   string, string, string | Element | React.ReactFragment
@@ -41,7 +42,7 @@ const LinksPage: NextPage<{}> = () => {
       <p>
         相互リンクをしている or していたリンク集です。相互リンクはお会いしたことがある方ならお気軽にご連絡をどうぞ。
       </p>
-      <table className={classes.linkTable}>
+      <Table>
         <tbody>
           {links.map((link) => (
             <tr key={link[1]}>
@@ -50,7 +51,7 @@ const LinksPage: NextPage<{}> = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 };

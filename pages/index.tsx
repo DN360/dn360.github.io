@@ -21,24 +21,24 @@ const IndexPage: NextPage<{}> = () => {
       </div>
       <BoxContainer size="3" className={classes.boxContainer}>
         <Box size="2" mode="fluid">
-          <Button><TabLink href="https://twitter.com/DN360">Twitter</TabLink></Button>
+          <Button className={classes.linkButton}><TabLink href="https://twitter.com/DN360">Twitter</TabLink></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <Button><TabLink href="https://github.com/DN360">Github</TabLink></Button>
+          <Button className={classes.linkButton}><TabLink href="https://github.com/DN360">Github</TabLink></Button>
         </Box>
       </BoxContainer>
       <BoxContainer size="2" className={classes.boxContainer}>
         <Box size="1" mode="fluid">
-          <Button><Link href="/about"><a>About</a></Link></Button>
+          <Button className={classes.linkButton}><Link href="/about"><a>About</a></Link></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <Button><Link href="/works"><a>Works</a></Link></Button>
+          <Button className={classes.linkButton}><Link href="/works"><a>Works</a></Link></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <Button><Link href="/links"><a>Links</a></Link></Button>
+          <Button className={classes.linkButton}><Link href="/links"><a>Links</a></Link></Button>
         </Box>
         <Box size="1" mode="fluid">
-          <Button><Link href="/history"><a>History</a></Link></Button>
+          <Button className={classes.linkButton}><Link href="/history"><a>History</a></Link></Button>
         </Box>
       </BoxContainer>
     </div>

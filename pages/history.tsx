@@ -3,6 +3,7 @@ import classes from 'styles//history.module.scss';
 import {NextPage} from 'next';
 import Head from 'next/head';
 import {BackButton} from 'components/Buttons';
+import {Table} from 'components/Table';
 
 const tableContents: string[][] = [
   ['2007-12-16', 'サークル発足'],
@@ -31,7 +32,7 @@ const HistoryPage: NextPage<{}> = () => {
       <p>
         このサイトの更新履歴です。
       </p>
-      <table className={classes.historyTable}>
+      <Table>
         <tbody>
           {tableContents.map((toc, i) => (
             <tr key={'history-' + i}>
@@ -40,7 +41,7 @@ const HistoryPage: NextPage<{}> = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 };

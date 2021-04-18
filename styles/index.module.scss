@@ -7,3 +7,10 @@
 .boxContainer {
   text-align: center;
 }
+
+.linkButton {
+  @extend .linkButton;
+  width: 100%;
+  border-radius: 0;
+  background-color: rgba($color: white, $alpha: 0.5);
+}

@@ -3,6 +3,7 @@ import classes from 'styles//about.module.scss';
 import {NextPage} from 'next';
 import Head from 'next/head';
 import {BackButton} from 'components/Buttons';
+import {Table} from 'components/Table';
 
 const AboutPage: NextPage<{}> = () => {
   return (
@@ -19,26 +20,27 @@ const AboutPage: NextPage<{}> = () => {
       <p>
         Monbrand Softwareはソフトウェアサークルです。主にウェブページの制作からAWSを用いたインフラ・バックエンドの開発などを行っています。
       </p>
-      <table className={classes.aboutTable}>
+      <Table>
         <tbody>
           <tr>
             <th>名前</th>
-            <td>もんぶらん</td>
+            <td colSpan={2}>もんぶらん</td>
           </tr>
           <tr>
             <th>Name</th>
-            <td>Monbrand Software</td>
+            <td colSpan={2}>Monbrand Software</td>
           </tr>
           <tr>
             <th>創始者</th>
             <td>永田 門</td>
+            <td>ニックネーム: DN360</td>
           </tr>
           <tr>
             <th>活動内容</th>
-            <td>ソフトウェアの開発・運用</td>
+            <td colSpan={2}>ソフトウェアの開発・運用</td>
           </tr>
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 };

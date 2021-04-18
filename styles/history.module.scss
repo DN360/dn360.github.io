@@ -2,16 +2,3 @@
 .root {
   display: block;
 }
-
-.historyTable {
-  width: 100%;
-  td,
-  th {
-    background-color: rgba($color: white, $alpha: 0.5);
-  }
-  th {
-    border-right: 1px double #777;
-  }
-}
-
-// write another class
