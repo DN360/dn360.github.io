@@ -12,6 +12,7 @@ const WorksPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | Works</title>
+        <meta property="og:title" content="Monbrand Software | Works"/>
         <meta name="description" content="Monbrand Software 作品集"/>
         <meta property="og:description" content="Monbrand Software 作品集"/>
       </Head>

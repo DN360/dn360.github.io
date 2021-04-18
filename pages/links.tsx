@@ -32,6 +32,7 @@ const LinksPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | Links</title>
+        <meta property="og:title" content="Monbrand Software | Links"/>
         <meta name="description" content="リンク集"/>
         <meta property="og:description" content="リンク集"/>
       </Head>

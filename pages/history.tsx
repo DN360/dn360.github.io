@@ -23,6 +23,7 @@ const HistoryPage: NextPage<{}> = () => {
     <div className={classes.root}>
       <Head>
         <title>Monbrand software | History</title>
+        <meta property="og:title" content="Monbrand Software | History"/>
         <meta name="description" content="Monbrand Softwareの歴史"/>
         <meta property="og:description" content="Monbrand Softwareの歴史"/>
       </Head>
