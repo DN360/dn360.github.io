@@ -1,21 +1,21 @@
 import React from 'react';
 import classes from 'styles//works.module.scss';
 import {NextPage} from 'next';
-import Head from 'next/head';
 import {BackButton} from 'components/Buttons';
 import Link from 'next/link';
 import {Table} from 'components/Table';
 import {TabLink} from 'components/TabLink';
+import {SmartHead} from 'components/SmartHead';
 
 const WorksPage: NextPage<{}> = () => {
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand software | Works</title>
-        <meta property="og:title" content="Monbrand Software | Works"/>
-        <meta name="description" content="Monbrand Software 作品集"/>
-        <meta property="og:description" content="Monbrand Software 作品集"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | Works"
+        description="作品ページ"
+        type="article"
+        uri="/works"
+      />
       <BackButton />
       <div className={classes.center}>
         <h1 className={classes.h5}>作品ページ</h1>

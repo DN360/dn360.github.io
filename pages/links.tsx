@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from 'styles//links.module.scss';
 import {NextPage} from 'next';
-import Head from 'next/head';
 import {BackButton} from 'components/Buttons';
 import {TabLink} from 'components/TabLink';
 import {Table} from 'components/Table';
+import {SmartHead} from 'components/SmartHead';
 
 const links: [
   string, string, string | Element | React.ReactFragment
@@ -30,12 +30,12 @@ const links: [
 const LinksPage: NextPage<{}> = () => {
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand software | Links</title>
-        <meta property="og:title" content="Monbrand Software | Links"/>
-        <meta name="description" content="リンク集"/>
-        <meta property="og:description" content="リンク集"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | Links"
+        description="リンク集"
+        type="article"
+        uri="/links"
+      />
       <BackButton />
       <div className={classes.center}>
         <h1 className={classes.h5}>リンク集</h1>

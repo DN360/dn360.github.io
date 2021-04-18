@@ -1,19 +1,19 @@
 import React from 'react';
 import classes from 'styles//about.module.scss';
 import {NextPage} from 'next';
-import Head from 'next/head';
+import {SmartHead} from 'components/SmartHead';
 import {BackButton} from 'components/Buttons';
 import {Table} from 'components/Table';
 
 const AboutPage: NextPage<{}> = () => {
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand software | About</title>
-        <meta property="og:title" content="Monbrand Software | About"/>
-        <meta name="description" content="Monbrand Softwareとは？"/>
-        <meta property="og:description" content="Monbrand Softwareとは？"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | About"
+        description="Monbrand Softwareとは？"
+        type="article"
+        uri="/about"
+      />
       <BackButton />
       <div className={classes.center}>
         <h1 className={classes.h5}>Monbrand Softwareとは？</h1>

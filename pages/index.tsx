@@ -1,21 +1,21 @@
 import React from 'react';
 import classes from '../styles/index.module.scss';
-import Head from 'next/head';
 import {NextPage} from 'next';
 import Link from 'next/link';
 import {Box, BoxContainer} from 'components/Box';
 import {TabLink} from 'components/TabLink';
 import {Button} from 'components/Buttons';
+import {SmartHead} from 'components/SmartHead';
 
 
 const IndexPage: NextPage<{}> = () => {
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand software | TOP</title>
-        <meta name="description" content="MonBrand Softwareの公式サイトです"/>
-        <meta property="og:description" content="MonBrand Softwareの公式サイトです"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | TOP"
+        type="website"
+        uri="/"
+      />
       <div className={classes.center}>
         <h1 className={classes.h5}>Welcome to Monbrand Software!</h1>
       </div>

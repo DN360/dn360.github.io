@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from 'styles//history.module.scss';
 import {NextPage} from 'next';
-import Head from 'next/head';
 import {BackButton} from 'components/Buttons';
 import {Table} from 'components/Table';
+import {SmartHead} from 'components/SmartHead';
 
 const tableContents: string[][] = [
   ['2007-12-16', 'サークル発足'],
@@ -21,12 +21,12 @@ const tableContents: string[][] = [
 const HistoryPage: NextPage<{}> = () => {
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand software | History</title>
-        <meta property="og:title" content="Monbrand Software | History"/>
-        <meta name="description" content="Monbrand Softwareの歴史"/>
-        <meta property="og:description" content="Monbrand Softwareの歴史"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | History"
+        description="サイト更新履歴"
+        type="article"
+        uri="/history"
+      />
       <BackButton />
       <div className={classes.center}>
         <h1 className={classes.h5}>サイト更新履歴</h1>

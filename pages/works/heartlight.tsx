@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import classes from 'styles/works/heartlight.module.scss';
 import {NextPage} from 'next';
-import Head from 'next/head';
 import {BackButton, Button, ToggleButton} from 'components/Buttons';
 import {cls} from 'utils';
 import {Spacer} from 'components/Spacer';
 import {Box, BoxContainer} from 'components/Box';
 import {heartlightPatterns} from '../../utils/data';
+import {SmartHead} from 'components/SmartHead';
 
 const sleep = async (time: number) => new Promise((resolve) => {
   setTimeout(() => {
@@ -100,12 +100,12 @@ const WorksHeartlightPage: NextPage<{}> = () => {
 
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand Software | ミラクルハートライトコントローラー</title>
-        <meta name="description" content="ミラクルハートライトの制御ページ"/>
-        <meta property="og:description" content="ミラクルハートライトの制御ページ"/>
-        <meta property="og:type" content="article"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | ミラクルハートライトコントローラー"
+        description="ミラクルハートライトの制御ページ"
+        type="article"
+        uri="/works/heartlight"
+      />
       <BackButton to="/works">go back to works page</BackButton>
       <div className={classes.center}>
         <h1 className={classes.h5}>ミラクルハートライトコントローラー</h1>

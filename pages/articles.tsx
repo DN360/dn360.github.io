@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import classes from 'styles//articles.module.scss';
 import {NextPage} from 'next';
-import Head from 'next/head';
 import {BackButton, Button} from 'components/Buttons';
 import {convertMiniArticle, getArticles, MiniArticle} from 'utils/articles';
 import {Table} from 'components/Table';
@@ -9,6 +8,7 @@ import Link from 'next/link';
 import * as qs from 'querystring';
 import {Spacer} from 'components/Spacer';
 import Router from 'next/router';
+import {SmartHead} from 'components/SmartHead';
 
 const ARTICLE_PER_PAGE = 10;
 
@@ -24,12 +24,12 @@ const ArticlesPage: NextPage<{articles?: MiniArticle[]}> = ({articles} = {articl
   });
   return (
     <div className={classes.root}>
-      <Head>
-        <title>Monbrand Software | Articles</title>
-        <meta property="og:title" content="Monbrand Software | Articles"/>
-        <meta name="description" content="ブログ記事一覧"/>
-        <meta property="og:description" content="ブログ記事一覧"/>
-      </Head>
+      <SmartHead
+        title="Monbrand Software | Articles"
+        description="記事一覧"
+        type="article"
+        uri="/articles"
+      />
       <BackButton />
       <div className={classes.center}>
         <h1 className={classes.h5}>記事一覧</h1>
