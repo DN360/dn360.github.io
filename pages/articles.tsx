@@ -34,9 +34,6 @@ const ArticlesPage: NextPage<{articles?: MiniArticle[]}> = ({articles} = {articl
       <p>
         雑記です。
       </p>
-      <p>
-        ページ {page} / {maxPage}
-      </p>
       <Table>
         <tbody>
           {
