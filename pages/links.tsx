@@ -15,7 +15,7 @@ const links: [
       <TabLink className={classes.link} href="https://twitter.com/uxhpu">あずきちゃん</TabLink>のホームページです。
     </span>
   )],
-  ['靴紐とトイレと竜田丼', 'http://shoelaceart.starfree.jp/uec/', (
+  ['捻れたバベル', 'https://hutinoatari.github.io/', (
     <span key="link-to-atari">
       <TabLink className={classes.link} href="https://twitter.com/ebioishii_u">淵野アタリ</TabLink>くんのホームページです。が、どうやらリンク切れしています。
     </span>
