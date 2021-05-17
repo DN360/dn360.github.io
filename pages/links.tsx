@@ -32,7 +32,7 @@ const links: [
     )],
   ['エイエヌソフト わぁるど', 'http://ansoft1984.com/', (
     <span key="link-to-ansoft">
-      This is my <TabLink className={classes.link} href="https://twitter.com/ANSoft1984">to-chang</TabLink>'s homepage.
+      This is my <TabLink className={classes.link} href="https://twitter.com/ANSoft1984">to-chang</TabLink>'s homepage.(急に音でるのでお気をつけて)
     </span>
     )],
 ];
