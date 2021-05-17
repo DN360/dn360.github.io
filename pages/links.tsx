@@ -25,6 +25,16 @@ const links: [
       <TabLink className={classes.link} href="https://twitter.com/TrpFrog">つまみ</TabLink>くんのホームページです。
     </span>
   )],
+  ['あまくだｒｙ', 'https://amakuda.blogspot.com', (
+    <span key="link-to-ond">
+      <TabLink className={classes.link} href="https://twitter.com/ondamayadori">おんだ</TabLink>さんのホームページです。
+    </span>
+    )],
+  ['エイエヌソフト わぁるど', 'http://ansoft1984.com/', (
+    <span key="link-to-ansoft">
+      This is my<TabLink className={classes.link} href="https://twitter.com/ANSoft1984">to-chang</TabLink>'s homepage.
+    </span>
+    )],
 ];
 
 const LinksPage: NextPage<{}> = () => {
